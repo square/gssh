@@ -20,9 +20,9 @@ func main() {
 		"maximum number of parallel processes, default - 50")
 	flag.IntVar(&maxflight, "maxflight", 50,
 		"maximum number of parallel processes, default - 50")
-	flag.IntVar(&timeout, "t", 3600, "timeout in seconds, default - 1h")
-	flag.IntVar(&timeout, "timeout", 3600,
-		"timeout in seconds, default - 1h")
+	flag.IntVar(&timeout, "t", 10, "timeout in seconds for initial conn, default - 10s")
+	flag.IntVar(&timeout, "timeout", 10,
+		"timeout in seconds for initial conn, default - 10s")
 	flag.StringVar(&file, "f", "",
 		"file to read hostnames from default - stdin")
 	flag.StringVar(&file, "file", "",

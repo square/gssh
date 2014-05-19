@@ -5,6 +5,7 @@ package main
 import (
 	"bufio"
 	"flag"
+	"fmt"
 	"github.com/syamp/gcmd"
 	"log"
 	"os"
@@ -19,9 +20,9 @@ func main() {
 		"maximum number of parallel processes, default - 50")
 	flag.IntVar(&maxflight, "maxflight", 50,
 		"maximum number of parallel processes, default - 50")
-	flag.IntVar(&timeout, "t", -1, "timeout in seconds, default - none")
-	flag.IntVar(&timeout, "timeout", -1,
-		"timeout in seconds, default - none")
+	flag.IntVar(&timeout, "t", 3600, "timeout in seconds, default - 1h")
+	flag.IntVar(&timeout, "timeout", 3600,
+		"timeout in seconds, default - 1h")
 	flag.StringVar(&file, "f", "",
 		"file to read hostnames from default - stdin")
 	flag.StringVar(&file, "file", "",
@@ -46,7 +47,9 @@ func main() {
 		nodes = append(nodes, scanner.Text())
 	}
 
-	args := []string{"__NODE__"} // marker
+	timeout_arg := fmt.Sprintf("ConnectTimeout=%d", timeout)
+
+	args := []string{"__NODE__", "-n", "-o", timeout_arg} // marker
 	args = append(args, flag.Args()...)
 	g := gcmd.New(nodes, "ssh", args...)
 	g.Maxflight = maxflight

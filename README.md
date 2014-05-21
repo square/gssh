@@ -1,9 +1,9 @@
-gssh
-====
+#### gssh
+
 simple command line to utility to run commands on multiple hosts in parallel
 
-Usage
-====
+##### Usage
+
 ```
 echo host1 > /tmp/hosts
 echo host2 >> /tmp/hosts
@@ -13,8 +13,12 @@ host1:stdout:Linux host1 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 U
 host2:stdout:Linux host2 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-Installation
-====
+```
+gssh -r host1..2 uname -a
+```
+
+
+##### Installation
 
 1. Install go
 

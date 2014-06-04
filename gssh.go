@@ -6,7 +6,7 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/syamp/erg"
+	"github.com/xaviershay/erg"
 	"github.com/syamp/gcmd"
 	"log"
 	"os"

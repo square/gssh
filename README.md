@@ -17,6 +17,13 @@ host2:stdout:Linux host2 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 U
 gssh -r host1..2 uname -a
 ```
 
+###### Overriding ssh options
+
+Example:
+
+```
+gssh -f file -- -o ConnectTimeout=30 -o BatchMode=yes id
+```
 
 ##### Installation
 

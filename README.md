@@ -28,4 +28,4 @@ gssh -f file -- -o ConnectTimeout=30 -o BatchMode=yes id
 ##### Installation
 
 1. Install go
-2. go get -u -v github.com/syamp/gssh
+2. go get -u -v github.com/square/gssh

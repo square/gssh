@@ -6,11 +6,12 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/xaviershay/erg"
-	"github.com/syamp/gcmd"
 	"log"
 	"os"
 	"strconv"
+
+	"github.com/square/gcmd"
+	"github.com/xaviershay/erg"
 )
 
 func main() {

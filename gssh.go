@@ -63,7 +63,14 @@ func main() {
 			port = x
 		}
 
-		e = erg.New(host, port)
+		if envSSL := os.Getenv("RANGE_SSL"); len(envSSL) > 0 {
+			if envSSL == "true" {
+				e = erg.New(host, port)
+			} else {
+				e = erg.NewWithSsl(host, port)
+			}
+		}
+
 		result, err := e.Expand(rangeexp)
 		nodes = result
 

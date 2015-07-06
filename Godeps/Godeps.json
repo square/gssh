@@ -1,0 +1,24 @@
+{
+	"ImportPath": "github.com/square/gssh",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/square/gcmd",
+			"Rev": "3d9379c261b98f9ae1c79b2c65715cbe64534ef6"
+		},
+		{
+			"ImportPath": "github.com/xaviershay/erg",
+			"Comment": "v1.1.1",
+			"Rev": "f79c795950645bd730a923f870f3deec17d14ada"
+		},
+		{
+			"ImportPath": "github.com/xaviershay/grange",
+			"Rev": "93b89f95443dcede3d0fb7cd08771a556ea6ff17"
+		},
+		{
+			"ImportPath": "gopkg.in/deckarep/v1/golang-set",
+			"Comment": "v1",
+			"Rev": "5504161cdd70d45b80bc11ae44a20f5ab1cce445"
+		}
+	]
+}

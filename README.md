@@ -33,3 +33,8 @@ gssh -f file -- tail -F /var/log/secure | grep -i Accepted
 
 1. Install go
 2. go get -u -v github.com/square/gssh
+
+##### Development
+* We use godep for vendoring and dependency management.
+  1. godep restore # restore to last known good set
+* Please run gofmt and golint before submitting PRs

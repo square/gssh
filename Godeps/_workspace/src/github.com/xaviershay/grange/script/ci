@@ -1,0 +1,6 @@
+#!/bin/bash -ex
+
+export RANGE_SPEC_PATH=/tmp/range-spec
+git clone https://github.com/xaviershay/range-spec.git $RANGE_SPEC_PATH
+
+go test

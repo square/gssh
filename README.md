@@ -24,17 +24,19 @@ Example:
 ```
 gssh -f file -- -o ConnectTimeout=30 -o BatchMode=yes id
 ```
+
 gssh supports streaming support. Useful for tailing logs across multiple machines etc
 
-```
+```bash
 gssh -f file -- tail -F /var/log/secure | grep -i Accepted
 ```
+
 ##### Installation
 
 1. Install go
-2. go get -u -v github.com/square/gssh
+2. `go get -u -v github.com/square/gssh`
 
 ##### Development
 * We use godep for vendoring and dependency management.
-  1. godep restore # restore to last known good set
-* Please run gofmt and golint before submitting PRs
+  * `godep restore # restore to last known good set`
+* Please run `gofmt` and `golint` before submitting PRs

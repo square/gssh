@@ -4,7 +4,7 @@ simple command line to utility to run commands on multiple hosts in parallel
 
 ##### Usage
 
-```bash
+```
 echo host1 > /tmp/hosts
 echo host2 >> /tmp/hosts
 gssh -f /tmp/hosts uname -a
@@ -13,7 +13,7 @@ gssh -f /tmp/hosts uname -a
 #host2:stdout:Linux host2 2.6.32-431.11.2.el6.x86_64 #1 SMP Tue Mar 25 19:59:55 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-```bash
+```
 gssh -r host1..2 uname -a
 ```
 
@@ -21,13 +21,13 @@ gssh -r host1..2 uname -a
 
 Example:
 
-```bash
+```
 gssh -f file -- -o ConnectTimeout=30 -o BatchMode=yes id
 ```
 
 gssh supports streaming support. Useful for tailing logs across multiple machines etc
 
-```bash
+```
 gssh -f file -- tail -F /var/log/secure | grep -i Accepted
 ```
 

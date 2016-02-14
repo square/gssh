@@ -25,7 +25,7 @@ Example:
 gssh -f file -- -o ConnectTimeout=30 -o BatchMode=yes id
 ```
 
-gssh supports streaming support. Useful for tailing logs across multiple machines etc
+gssh supports streaming output. Useful for tailing logs across multiple machines etc
 
 ```
 gssh -f file -- tail -F /var/log/secure | grep -i Accepted

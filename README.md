@@ -1,6 +1,6 @@
 #### gssh
 
-simple command line to utility to run commands on multiple hosts in parallel
+simple command line program to run commands on multiple hosts in parallel.
 
 ##### Usage
 

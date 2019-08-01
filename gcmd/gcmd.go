@@ -30,11 +30,11 @@ func New(nodes []string, command string, command_args ...string) *Gcmd {
 	g.command_args = command_args
 	// default handler functions
 	g.StdoutHandler = func(node string, o string) {
-		fmt.Printf("%s:stdout:%s\n", node, string(o))
+		fmt.Printf("%s:stdout:%s\n", node, o)
 	}
 
 	g.StderrHandler = func(node string, o string) {
-		fmt.Printf("%s:stderr:%s\n", node, string(o))
+		fmt.Printf("%s:stderr:%s\n", node, o)
 	}
 
 	g.ExitHandler = func(node string, exit error) {
@@ -43,7 +43,6 @@ func New(nodes []string, command string, command_args ...string) *Gcmd {
 			return
 		}
 		fmt.Printf("%s:success\n", node)
-		return
 	}
 
 	return g
@@ -115,8 +114,6 @@ func (g *Gcmd) Run() {
 
 			err = cmd.Wait()
 			g.ExitHandler(node, err)
-			return
-
 		}(node)
 	}
 	wg.Wait()

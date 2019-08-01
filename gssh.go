@@ -10,8 +10,8 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/square/erg"
 	"github.com/square/gcmd"
-	"github.com/xaviershay/erg"
 )
 
 func main() {

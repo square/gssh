@@ -11,7 +11,7 @@ import (
 	"strconv"
 
 	"github.com/square/erg"
-	"github.com/square/gcmd"
+	"github.com/square/gssh/gcmd"
 )
 
 func main() {

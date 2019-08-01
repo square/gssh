@@ -4,8 +4,6 @@ github.com/orcaman/concurrent-map v0.0.0-20190314100340-2693aad1ed75 h1:IV56VwUb
 github.com/orcaman/concurrent-map v0.0.0-20190314100340-2693aad1ed75/go.mod h1:Lu3tH6HLW3feq74c2GC+jIMS/K2CFcDWnWD9XkenwhI=
 github.com/square/erg v1.2.1 h1:UwFbfH62AydbD8aN+9x9EPu7c2+ScHXvQMypgjekHPs=
 github.com/square/erg v1.2.1/go.mod h1:VBs5t17gOUoQU5voWjNClyBEilVMdpRausThgaOe8vY=
-github.com/square/gcmd v0.0.0-20150519005039-3d9379c261b9 h1:MljZ2VGGzIx7TIaIOcUx+BS+tbJkxKfp9os3LthYFPY=
-github.com/square/gcmd v0.0.0-20150519005039-3d9379c261b9/go.mod h1:DCADyrG/DgGG+zd5aYoGd+at41GhHirI81KvKz84fw8=
 github.com/square/grange v0.0.0-20181101000935-cd9e0f7898c3 h1:+23OHZptAlkh7S/AXEP24Ij/axI3i+Btd7leccZ0p+E=
 github.com/square/grange v0.0.0-20181101000935-cd9e0f7898c3/go.mod h1:cw4nDWqdJQW/aODLVNssoyM6+aKMzsMGRuvritMzWl4=
 github.com/xlab/handysort v0.0.0-20150421192137-fb3537ed64a1 h1:j2hhcujLRHAg872RWAV5yaUrEjHEObwDv3aImCaNLek=

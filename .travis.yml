@@ -1,8 +1,13 @@
----
 language: go
 
+os: linux
+
+dist: bionic
+
 go:
- - 1.x
+ - 1.12.17 # Old version to make sure that dependants are compatible
+ - 1.13.10 # Only the two latests versions are officially supported in go
+ - 1.14.2
 
 env:
  - GO111MODULE=on
